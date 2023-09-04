@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sarthak's Portfolio</title>
+  </head>
+  <body>
+    <div id="main" class="lightmode">
+      <div class="slidebar slidebarGo">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="myintro.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><button class="darkmode-btn" id="DarkMode">DarkMode</button></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="main">
+        <div class="hamburger">
+          <i class="fa-solid ham fa-list-ul fa-xl"></i>
+        </div>
+        <section class="firstsection">
+          <div class="leftsection">
+            Hi, My name is
+            <div class="purple">Sarthak</div>
+            <div>and I am a</div>
+            <span id="element"></span>
+            <div class="button">
+              <a href="Sarthak Goyal Resume.pdf" target="_blank"
+                ><button class="btn">Resume</button></a>
+            </div>
+          </div>
+          <div class="rightsection">
+            <img style="border-radius: 50%;" src="images/myprofile.jfif" alt="" />
+          </div>
+        </section>
+        <footer>
+          <div class="footer">
+            <div class="footer-first">
+              <h3>Sarthak's Portfolio</h3>
+            </div>
+            <div class="connection-buttons"><a href="https://www.facebook.com/vishal.chakarvadi" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a></div>
+            <div class="connection-buttons"><a href="https://www.instagram.com/sg_goyal225/#" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a></div>
+            <div class="connection-buttons"><a href="https://www.linkedin.com/in/sarthak-goyal-181996227?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADjrnnEBy8RPkZ1EwqcmrZthF7Ogp32S6XE" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a></div>
+            <div class="connection-buttons"><a href="https://api.whatsapp.com/send/?phone=918791719046&text&type=phone_number&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp fa-xl"></i></a></div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer.", "DSA Programmer."],
+        typeSpeed: 100,
+      });
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>

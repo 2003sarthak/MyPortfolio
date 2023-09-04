@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: url(images/bg2.jpg);
+}
+.lightmode {
+  display: flex;
+}
+.slidebar {
+  background: url(images/bg7.jpg) center;
+  height: auto;
+  border-radius: 5px;
+  font-family: "Fira Sans", sans-serif;
+  transition: transform 0.3s ease-in;
+}
+.slidebar nav {
+  padding: 45px;
+}
+.slidebar nav li {
+  list-style: none;
+  font-size: 32px;
+  padding: 27px 0;
+}
+.slidebar nav a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+.slidebar nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  background: #1864ab;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+.slidebar nav a:hover::after{
+  width: 100%;
+}
+.slidebarGo {
+  transform: translate(-250px, 0px);
+  position: absolute;
+}
+.main {
+  width: 85vw;
+  padding: 32px;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: auto;
+  border-radius: 5px;
+  background: url(images/bg7.jpg) center;
+}
+.hamburger {
+  position: absolute;
+  cursor: pointer;
+  top: 10px;
+  left: 10px;
+  padding: 5px;
+}
+.firstsection {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
+  align-items: center;
+}
+.firstsection > div {
+  width: 30%;
+}
+.leftsection {
+  font-size: 2.5rem;
+}
+.leftsection .button {
+  padding: 50px 0;
+}
+.leftsection .btn {
+  padding: 12px;
+  background-color: rgb(12, 12, 78);
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.leftsection .btn:hover {
+  background-color: rgb(211, 211, 211);
+  color: rgb(12, 12, 78);
+  border: 2px solid rgb(12, 12, 78);
+}
+.rightsection img {
+  width: 100%;
+}
+.darkmode-btn{
+  padding: 12px;
+  background-color: rgb(12, 12, 78);
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.darkmode-btn:hover{
+  background-color: rgb(211, 211, 211);
+  color: rgb(12, 12, 78);
+  border: 2px solid rgb(12, 12, 78);
+}
+.purple {
+  color: rgb(151, 151, 248);
+}
+#element {
+  color: rgb(151, 151, 248);
+}
+footer {
+  display: flex;
+  justify-content: center;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  padding: 15px 110px;
+  width: 20vw;
+  margin-top: 30px;
+}
+.footer-first {
+  padding: 10px 10px;
+}
+.connection-buttons {
+  padding: 10px 10px;
+}
+.connection-buttons a {
+  text-decoration: none;
+  padding: 8px 6px;
+  background-color: rgb(211, 211, 211);
+  color: rgb(12, 12, 78);
+  border-radius: 5px;
+}
+.connection-buttons a:hover {
+  background-color: rgb(12, 12, 78);
+  color: rgb(211, 211, 211);
+  border-radius: 5px;
+}
+/*darkmode/home*/
+.darkmode {
+  display: flex;
+}
+.darkmode .slidebar {
+  background: url(images/bg.webp) no-repeat;
+}
+.darkmode .slidebar nav a {
+  color: rgb(211, 211, 211);
+}
+.darkmode .main {
+  background: url(images/bg.webp) ;
+}
+.darkmode .leftsection {
+  color: rgb(211, 211, 211);
+}
+.darkmode .leftsection .btn {
+  background-color: rgb(211, 211, 211);
+  color: rgb(12, 12, 78);
+  border: 2px solid rgb(12, 12, 78);
+}
+.darkmode .leftsection .btn:hover {
+  background-color: rgba(114, 114, 226, 0.281);
+  color: white;
+  border: 2px solid white;
+}
+.darkmode .darkmode-btn{
+  background-color: rgb(211, 211, 211);
+  color: rgb(12, 12, 78);
+  border: 2px solid rgb(12, 12, 78);
+}
+.darkmode .darkmode-btn:hover{
+  background-color: rgba(0, 0, 0, 0.425);
+  color: white;
+  border: 2px solid white;
+}
+.darkmode .connection-buttons a {
+  background-color: rgb(114, 114, 226);
+  color: white;
+}
+.darkmode .connection-buttons a:hover {
+  background-color: white;
+  color: rgb(114, 114, 226);
+}
+.darkmode .hamburger{
+  background-color:rgb(211, 211, 211) ;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+/*My intro*/
+.myintro {
+  margin: 7px 15px;
+}
+.myintro-heading {
+  padding: 13px 0px;
+}
+.text {
+  font-size: larger;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+}
+.skill-box {
+  margin-left: 8px;
+  height: 1.5vh;
+  width: 30vw;
+  background-color: red;
+  border: 3px solid black;
+  border-radius: 7px;
+}
+.basic {
+  width: 10vw;
+  background-color: blue;
+}
+.improving {
+  width: 18vw;
+  background-color: yellow;
+}
+/*darkmode/myintro*/
+.darkmode .skill-box{
+  border: 3px solid rgb(211, 211, 211);
+}
+.darkmode .myintro-heading{
+  color: rgb(211, 211, 211) ;
+}
+.darkmode .text{
+  color: rgb(211, 211, 211) ;
+}
+/*Projects*/
+.accordion {
+  width: 80%;
+  margin: 40px auto;
+}
+.item {
+  margin: 25px 0;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 30px;
+  align-items: center;
+  padding: 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: whitesmoke;
+}
+
+h2 {
+  font-size: 24px;
+  text-transform: capitalize;
+}
+
+.number {
+  font-size: 32px;
+}
+
+.icon {
+  color: #1864ab;
+}
+
+.hidden-box {
+  grid-column: 2/3;
+  display: none;
+}
+
+.hidden-box p {
+  line-height: 1.6;
+  margin-bottom: 24px;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  word-spacing: 3px;
+}
+.weblink {
+  padding: 6px 8px;
+  margin: 8px 8px;
+  background-color: rgb(12, 12, 78);
+  color: white;
+  border-radius: 5px;
+}
+.weblink:hover {
+  background-color: white;
+  color: rgb(12, 12, 78);
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.active {
+  position: relative;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  border-top: 3px solid #1864ab;
+  animation: borderline 1s linear forwards;
+}
+
+@keyframes borderline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.active .hidden-box {
+  display: block;
+}
+/*contact*/
+.contact-head{
+  font-size: larger;
+  padding: 18px 0px;
+}
+.padding{
+  padding: 15px 0px;
+}
+@media only screen and (max-width: 940px) {
+  .contact-img{
+    display: none;
+  }
+}
